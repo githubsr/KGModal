@@ -50,6 +50,10 @@ typedef NS_ENUM(NSUInteger, KGModalCloseButtonType){
 // Defaults to YES, only applies to iOS5
 @property (nonatomic) BOOL shouldRotate;
 
+// Determines style if status bar appearance based on view controller
+// Defaults to UIStatusBarStyleDefault
+@property (nonatomic) UIStatusBarStyle statusBarStyle;
+
 // The shared instance of the modal
 + (instancetype)sharedInstance;
 

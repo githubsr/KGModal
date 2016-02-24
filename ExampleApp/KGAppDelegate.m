@@ -29,6 +29,7 @@
     [self.window.rootViewController.view addSubview:showButton];
 
     [KGModal sharedInstance].closeButtonType = KGModalCloseButtonTypeRight;
+    [KGModal sharedInstance].statusBarStyle = UIStatusBarStyleLightContent;
     
     [self.window makeKeyAndVisible];
 

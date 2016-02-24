@@ -268,6 +268,10 @@ NSString *const KGModalDidHideNotification = @"KGModalDidHideNotification";
     self.styleView = styleView;
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return [[KGModal sharedInstance] statusBarStyle];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation{
     return [[KGModal sharedInstance] shouldRotate];
 }
